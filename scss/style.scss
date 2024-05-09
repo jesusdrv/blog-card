@@ -1,0 +1,76 @@
+@import 'variable.scss';
+
+* {
+    background-color: $Yellow;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Figtree", sans-serif;
+}
+
+p {
+    font-size: $paragraph;
+    color: $Black;
+    background-color: $transparent;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+h2 {
+    background-color: $transparent;
+    font-weight: 800;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .container {
+        background-color: $White;
+        padding: 30px;
+        border-radius: 16px;
+        max-width: 400px;
+        margin: 20px;
+        box-shadow: 8px 8px 0px 3px;
+        border: 1px solid;
+        img {
+            border-radius: 16px;
+            width: 100%; 
+        }
+        .btn {
+            font-weight: 800;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            width: 100px;
+            font-size: $paragraph;
+            margin-top: 20px;
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            background-color: $transparent;
+            p {
+                &:nth-last-child(2) {
+                    color: $Grey;
+                    font-weight: 400;
+                }
+                &:last-child {
+                    font-weight: 800;
+                }
+            }
+            .img {
+                background-color: $transparent;
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                img {
+                    background-color: $transparent;
+                    width: 40px;
+                    margin-right: 10px ;
+                }
+            }
+        }
+    }
+}
